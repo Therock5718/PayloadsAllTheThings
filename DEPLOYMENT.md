@@ -77,4 +77,4 @@ If deployment fails:
 ## Site URL
 
 After deployment, the site will be available at:
-`https://therock5718.github.io/PayloadsAllTheThings`
+`https://Therock5718.github.io/PayloadsAllTheThings`
