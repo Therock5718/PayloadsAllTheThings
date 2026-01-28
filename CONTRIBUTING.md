@@ -6,6 +6,90 @@ Feel free to improve with your payloads and techniques !
 
 You can also contribute with a :beers: IRL, or using the [sponsor](https://github.com/sponsors/swisskyrepo) button.
 
+## Contribution Process
+
+This section provides a step-by-step workflow for contributing to PayloadsAllTheThings.
+
+### Step 1: Fork and Clone the Repository
+
+1. Fork the repository on GitHub by clicking the "Fork" button
+2. Clone your fork locally:
+
+   ```bash
+   git clone https://github.com/YOUR-USERNAME/PayloadsAllTheThings.git
+   cd PayloadsAllTheThings
+   ```
+
+3. Add the upstream repository as a remote:
+
+   ```bash
+   git remote add upstream https://github.com/swisskyrepo/PayloadsAllTheThings.git
+   ```
+
+### Step 2: Create a Branch
+
+Create a new branch for your contribution:
+
+```bash
+git checkout -b your-branch-name
+```
+
+Use descriptive branch names like `add-xxe-payload`, `fix-sqli-typo`, or `update-csrf-methodology`.
+
+### Step 3: Make Your Changes
+
+- Add new payloads, techniques, or fix existing content
+- Follow the [Pull Requests Guidelines](#pull-requests-guidelines) below
+- Use the `_template_vuln` folder as a starting point for new vulnerability sections
+- Ensure your content follows the [README.md Format](#readmemd-format)
+
+### Step 4: Validate Your Changes Locally
+
+Before submitting, validate your markdown files with markdownlint (see [Pull Requests Guidelines](#pull-requests-guidelines) for details):
+
+```bash
+docker run -v $PWD:/workdir davidanson/markdownlint-cli2:v0.15.0 "**/*.md" --config .github/.markdownlint.json --fix
+```
+
+This ensures your changes follow markdown best practices and will pass automated checks.
+
+### Step 5: Commit and Push
+
+1. Stage your changes:
+
+   ```bash
+   git add .
+   ```
+
+2. Commit with a clear message:
+
+   ```bash
+   git commit -m "Add new XSS payload for bypass"
+   ```
+
+3. Push to your fork:
+
+   ```bash
+   git push origin your-branch-name
+   ```
+
+### Step 6: Create a Pull Request
+
+1. Go to your fork on GitHub
+2. Click "New Pull Request"
+3. Select your branch and provide a clear description of your changes
+4. Submit the pull request and wait for review
+
+### Step 7: Address Review Feedback
+
+- Respond to any feedback from maintainers
+- Make requested changes in your branch
+- Push updates to automatically update the pull request
+
+### Step 8: Merge
+
+Once approved, your pull request will be merged by a maintainer. Thank you for contributing!
+
 ## Pull Requests Guidelines
 
 In order to provide the safest payloads for the community, the following rules must be followed for **every** Pull Request.
