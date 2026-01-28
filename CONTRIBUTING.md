@@ -45,7 +45,7 @@ Use descriptive branch names like `add-xxe-payload`, `fix-sqli-typo`, or `update
 
 ### Step 4: Validate Your Changes Locally
 
-Before submitting, validate your markdown files with markdownlint:
+Before submitting, validate your markdown files with markdownlint (see [Pull Requests Guidelines](#pull-requests-guidelines) for details):
 
 ```bash
 docker run -v $PWD:/workdir davidanson/markdownlint-cli2:v0.15.0 "**/*.md" --config .github/.markdownlint.json --fix
